@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Shop Front v1.1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-05-26 10:18+0100\n"
+"POT-Creation-Date: 2014-05-27 09:48+0100\n"
+"PO-Revision-Date: 2014-05-27 09:56+0100\n"
 "Last-Translator: Carsten Scheuer <scheuer@inveris.de>\n"
 "Language-Team: Carsten Scheuer <scheuer@inveris.de>\n"
 "Language: de_DE\n"
@@ -31,14 +31,14 @@ msgstr "Sieht so aus als konnte nicht gefunden, wonach du gesucht hast."
 
 # @ shop-front
 #: archive-download.php:53 includes/edd-functions.php:109
-#: taxonomy-download_category.php:55 taxonomy-download_tag.php:55
+#: taxonomy-download_category.php:55 taxonomy-download_tag.php:56
 #, php-format
 msgid "No %s to display"
 msgstr "Keine %s zum Anzeigen"
 
 # @ shop-front
 #: archive-download.php:57 includes/edd-functions.php:113
-#: taxonomy-download_category.php:59 taxonomy-download_tag.php:59
+#: taxonomy-download_category.php:59 taxonomy-download_tag.php:60
 #, php-format
 msgid "Ready to add your first %s? <a href=\"%s\">Get started here</a>."
 msgstr "Bereit für deinen ersten %s? <a href=\"%s\">Hier geht&rsquo;s los</a>."
@@ -46,13 +46,13 @@ msgstr "Bereit für deinen ersten %s? <a href=\"%s\">Hier geht&rsquo;s los</a>."
 # @ shop-front
 #: archive-download.php:63 archive.php:38 category.php:49 index.php:60
 #: search.php:25 taxonomy-download_category.php:65
-#: taxonomy-download_tag.php:65
+#: taxonomy-download_tag.php:66
 msgid "Nothing Found"
 msgstr "Nichts gefunden"
 
 # @ shop-front
 #: archive-download.php:67 taxonomy-download_category.php:69
-#: taxonomy-download_tag.php:69
+#: taxonomy-download_tag.php:70
 msgid "Sorry, there's nothing here just yet."
 msgstr "Entschuldigung, hier ist momentan noch nichts."
 
@@ -159,7 +159,7 @@ msgstr "Demnächst verfügbar"
 
 # @ shop-front
 # @ edd
-#: edd_templates/shortcode-content-price.php:32 includes/edd-functions.php:445
+#: edd_templates/shortcode-content-price.php:32 includes/edd-functions.php:417
 msgid "Free"
 msgstr "Kostenlos"
 
@@ -208,8 +208,16 @@ msgid "<i class=\"icon icon-arrow-right\"></i><span class=\"text\">Next</span>"
 msgstr ""
 "<i class=\"icon icon-arrow-right\"></i><span class=\"text\">Nächste</span>"
 
+#: includes/EDD_SL_Theme_Updater.php:53
+msgid ""
+"Updating this theme will lose any customizations you have made. 'Cancel' to "
+"stop, 'OK' to update."
+msgstr ""
+"Durch die Aktualisierung dieses Themes gehen alle individuellen Anpassungen "
+"verloren. 'Abbrechen' oder 'OK' zum Aktualisieren."
+
 # @ shop-front
-#: includes/comments.php:21
+#: includes/comments.php:21 page-templates/contact.php:119
 msgid "Name"
 msgstr "Name"
 
@@ -219,7 +227,7 @@ msgid "Please enter your Name"
 msgstr "Bitte den Namen eingeben"
 
 # @ shop-front
-#: includes/comments.php:23
+#: includes/comments.php:23 page-templates/contact.php:130
 msgid "Email"
 msgstr "E-Mail-Adresse"
 
@@ -321,33 +329,32 @@ msgid "Featured %s"
 msgstr "Empfohlene %s"
 
 # @ shop-front
-#: includes/edd-functions.php:198 includes/wp-customize.php:313
+#: includes/edd-functions.php:198 includes/wp-customize.php:302
 msgid "View all"
 msgstr "Alle anzeigen"
 
 # @ shop-front
-#: includes/edd-functions.php:236 includes/wp-customize.php:392
+#: includes/edd-functions.php:236 includes/edd-functions.php:522
+#: includes/wp-customize.php:381
 msgid "Cart"
 msgstr "Einkaufswagen"
 
 # @ shop-front
-#: includes/edd-functions.php:236 includes/wp-customize.php:393
+#: includes/edd-functions.php:236 includes/edd-functions.php:519
+#: includes/wp-customize.php:382
 msgid "Basket"
 msgstr "Warenkorb"
 
-# @ edd
-#: includes/edd-functions.php:362
-#, php-format
-msgid "You have successfully added %s to your %2$s"
-msgstr "Du hast erfolgreich %s zu deinem %2$s hinzugefügt."
+#: includes/edd-functions.php:285
+msgid "Remove Discount"
+msgstr "Gutschein/Rabattcode entfernen"
+
+#: includes/edd-functions.php:285
+msgid "remove"
+msgstr "entfernen"
 
 # @ shop-front
-#: includes/edd-functions.php:363 includes/edd-functions.php:509
-msgid "Checkout"
-msgstr "Kasse"
-
-# @ shop-front
-#: includes/edd-functions.php:413
+#: includes/edd-functions.php:385
 #, php-format
 msgid ""
 "No checkout page has been configured. Visit <a href=\"%s\">Settings</a> to "
@@ -357,40 +364,54 @@ msgstr ""
 "\">Einstellungen</a> aus."
 
 # @ shop-front
-#: includes/edd-functions.php:422
+#: includes/edd-functions.php:394
 msgid "Purchase"
 msgstr "Kaufen"
 
 # @ edd
-#: includes/edd-functions.php:466
+#: includes/edd-functions.php:438
 #, php-format
 msgid "Includes %1$s&#37; tax"
 msgstr "Enthält %1$s&#37; Steuern"
 
 # @ shop-front
-#: includes/edd-functions.php:509
+#: includes/edd-functions.php:481
 msgid "Go to Checkout"
 msgstr "Zur Kasse gehen"
 
 # @ shop-front
-#: includes/edd-functions.php:543
+#: includes/edd-functions.php:481
+msgid "Checkout"
+msgstr "Kasse"
+
+# @ shop-front
+#: includes/edd-functions.php:525
 #, php-format
 msgid "<p class=\"alert notice\">Your %1$s is empty</p>"
 msgstr "<p class=\"alert notice\">Dein %1$s ist leer</p>"
 
+#: includes/edd-functions.php:571
+msgid "cart"
+msgstr "Einkaufswagen"
+
 # @ shop-front
-#: includes/edd-functions.php:591
+#: includes/edd-functions.php:571
+msgid "basket"
+msgstr "Warenkorb"
+
+# @ shop-front
+#: includes/edd-functions.php:575
 msgid "Add to"
 msgstr "Hinzufügen zum"
 
 # @ shop-front
-#: includes/edd-functions.php:628
+#: includes/edd-functions.php:612
 #, php-format
 msgid "Categories: %1$s"
 msgstr "Kategorien: %1$s"
 
 # @ shop-front
-#: includes/edd-functions.php:631
+#: includes/edd-functions.php:615
 #, php-format
 msgid "Tags: %2$s"
 msgstr "Schlagworte: %2$s"
@@ -432,7 +453,7 @@ msgid "<i class=\"icon icon-arrow-right\"></i>"
 msgstr "<i class=\"icon icon-arrow-right\"></i>"
 
 # @ shop-front
-#: includes/navigation.php:229 page-templates/blog.php:60
+#: includes/navigation.php:229 page-templates/blog.php:60 search.php:38
 msgid "Post navigation"
 msgstr "Beitrags-Navigation"
 
@@ -598,156 +619,191 @@ msgid "Copyright &copy;"
 msgstr "Copyright &copy;"
 
 # @ shop-front
-#: includes/wp-customize.php:169
+#: includes/updater.php:45
+msgid "Theme License Options"
+msgstr "Theme-Lizenz-Optionen"
+
+#: includes/updater.php:46
+msgid "Enter your license key to receive Automatic Theme Updates."
+msgstr ""
+"Hinterlege den Lizenzschlüssel um automatische Theme-Updates zu erhalten."
+
+# @ shop-front
+#: includes/updater.php:55
+msgid "Shop Front License Key"
+msgstr "Shop-Front-Lizenzschlüssel"
+
+#: includes/updater.php:59
+msgid "Enter Your License Key"
+msgstr "Gib deinen Lizenzschlüssel ein."
+
+#: includes/updater.php:65
+msgid "Active"
+msgstr "Aktiv"
+
+#: includes/updater.php:67
+msgid "Deactivate License"
+msgstr "Lizenz deaktivieren"
+
+#: includes/updater.php:74
+msgid "Deactivated"
+msgstr "Deaktiviert"
+
+#: includes/updater.php:77
+msgid "Activate License"
+msgstr "Lizenz aktivieren"
+
+# @ shop-front
+#: includes/wp-customize.php:158
 msgid "Homepage"
 msgstr "Startseite"
 
 # @ shop-front
-#: includes/wp-customize.php:178
+#: includes/wp-customize.php:167
 msgid "Shop"
 msgstr "Shop"
 
 # @ shop-front
-#: includes/wp-customize.php:187
+#: includes/wp-customize.php:176
 msgid "General"
 msgstr "Allgemein"
 
 # @ shop-front
-#: includes/wp-customize.php:194
+#: includes/wp-customize.php:183
 msgid "Styling"
 msgstr "Gestaltung"
 
 # @ shop-front
-#: includes/wp-customize.php:203
+#: includes/wp-customize.php:192
 msgid "Footer"
 msgstr "Footer"
 
 # @ shop-front
-#: includes/wp-customize.php:213
+#: includes/wp-customize.php:202
 msgid "Blog Page Template"
 msgstr "Blog-Seiten-Template"
 
 # @ shop-front
-#: includes/wp-customize.php:220
+#: includes/wp-customize.php:209
 msgid "Typography"
 msgstr "Typographie"
 
 # @ shop-front
-#: includes/wp-customize.php:242
+#: includes/wp-customize.php:231
 msgid "Copyright"
 msgstr "Copyright"
 
 # @ shop-front
-#: includes/wp-customize.php:265
+#: includes/wp-customize.php:254
 msgid "Featured Downloads To Show"
 msgstr "Empfohlene Downloads zum Anzeigen"
 
 # @ shop-front
-#: includes/wp-customize.php:267
+#: includes/wp-customize.php:256
 msgid "-1 shows all downloads. Enter 0 to disable."
 msgstr "-1 zum Anzeigen aller Downloads, 0 zum Deaktivieren."
 
 # @ shop-front
-#: includes/wp-customize.php:281
+#: includes/wp-customize.php:270
 msgid "Latest Downloads To Show"
 msgstr "Neuste Downloads zum Anzeigen"
 
 # @ shop-front
-#: includes/wp-customize.php:283
+#: includes/wp-customize.php:272
 msgid "Leave blank to show all. Enter 0 to disable."
 msgstr "Leer lassen um alle anzuzeigen, 0 zum Deaktivieren."
 
 # @ shop-front
-#: includes/wp-customize.php:296 includes/wp-customize.php:367
+#: includes/wp-customize.php:285 includes/wp-customize.php:356
 msgid "Download Columns"
 msgstr "Download-Spalten"
 
 # @ shop-front
-#: includes/wp-customize.php:300 includes/wp-customize.php:371
-#: includes/wp-customize.php:614
+#: includes/wp-customize.php:289 includes/wp-customize.php:360
+#: includes/wp-customize.php:603
 msgid "1"
 msgstr "1"
 
 # @ shop-front
-#: includes/wp-customize.php:301 includes/wp-customize.php:372
-#: includes/wp-customize.php:615
+#: includes/wp-customize.php:290 includes/wp-customize.php:361
+#: includes/wp-customize.php:604
 msgid "2"
 msgstr "2"
 
 # @ shop-front
-#: includes/wp-customize.php:302 includes/wp-customize.php:373
-#: includes/wp-customize.php:616
+#: includes/wp-customize.php:291 includes/wp-customize.php:362
+#: includes/wp-customize.php:605
 msgid "3"
 msgstr "3"
 
 # @ shop-front
-#: includes/wp-customize.php:303 includes/wp-customize.php:374
-#: includes/wp-customize.php:617
+#: includes/wp-customize.php:292 includes/wp-customize.php:363
+#: includes/wp-customize.php:606
 msgid "4"
 msgstr "4"
 
 # @ shop-front
-#: includes/wp-customize.php:318
+#: includes/wp-customize.php:307
 msgid "Button Text"
 msgstr "Button-Text"
 
 # @ shop-front
-#: includes/wp-customize.php:320
+#: includes/wp-customize.php:309
 msgid "Leave blank to disable."
 msgstr "Leer lassen zum Deaktivieren"
 
 # @ shop-front
-#: includes/wp-customize.php:335
+#: includes/wp-customize.php:324
 msgid "Shop Title"
 msgstr "Shop-Titel"
 
 # @ shop-front
-#: includes/wp-customize.php:337
+#: includes/wp-customize.php:326
 msgid "Leave blank to disable"
 msgstr "Leer lassen zum Deaktivieren"
 
 # @ shop-front
-#: includes/wp-customize.php:350
+#: includes/wp-customize.php:339
 msgid "Downloads Per Page"
 msgstr "Downloads pro Seite"
 
 # @ shop-front
-#: includes/wp-customize.php:352
+#: includes/wp-customize.php:341
 msgid "Leave blank to show all"
 msgstr "Leer lassen um alle anzuzeigen"
 
 # @ shop-front
-#: includes/wp-customize.php:388
+#: includes/wp-customize.php:377
 msgid "Display Cart or Basket?"
 msgstr "Einkaufswagen oder Warenkorb anzeigen?"
 
 # @ shop-front
-#: includes/wp-customize.php:403
+#: includes/wp-customize.php:392
 msgid "Show icon in navigation?"
 msgstr "Icons in der Navigation anzeigen?"
 
 # @ shop-front
-#: includes/wp-customize.php:415
+#: includes/wp-customize.php:404
 msgid "Icon Alignment"
 msgstr "Icon-Ausrichtung"
 
 # @ shop-front
-#: includes/wp-customize.php:419
+#: includes/wp-customize.php:408
 msgid "Left"
 msgstr "Links"
 
 # @ shop-front
-#: includes/wp-customize.php:420
+#: includes/wp-customize.php:409
 msgid "Right"
 msgstr "Rechts"
 
 # @ shop-front
-#: includes/wp-customize.php:438 includes/wp-customize.php:452
+#: includes/wp-customize.php:427 includes/wp-customize.php:441
 msgid "Blog Template Posts Per Page"
 msgstr "Blog-Template Beiträge pro Seite"
 
 # @ shop-front
-#: includes/wp-customize.php:440
+#: includes/wp-customize.php:429
 msgid ""
 "Leave blank to use the \"Blog pages show at most\" number under Settings "
 "&rarr; Reading. Enter -1 to show all blog posts."
@@ -756,27 +812,27 @@ msgstr ""
 "&rarr; Lesen zu verwenden. -1 eingeben um alle Blog-Beiträge anzuzeigen."
 
 # @ shop-front
-#: includes/wp-customize.php:456
+#: includes/wp-customize.php:445
 msgid "Excerpts"
 msgstr "Auszüge"
 
 # @ shop-front
-#: includes/wp-customize.php:457
+#: includes/wp-customize.php:446
 msgid "Full Content"
 msgstr "Gesamter Inhalt"
 
 # @ shop-front
-#: includes/wp-customize.php:478
+#: includes/wp-customize.php:467
 msgid "Theme Style"
 msgstr "Theme-Stil"
 
 # @ shop-front
-#: includes/wp-customize.php:494
+#: includes/wp-customize.php:483
 msgid "Logo"
 msgstr "Logo"
 
 # @ shopfront
-#: includes/wp-customize.php:515
+#: includes/wp-customize.php:504
 msgid "Typography Stylesheet"
 msgstr "Typographie-Stylesheet"
 
@@ -784,12 +840,6 @@ msgstr "Typographie-Stylesheet"
 #: page-templates/archives.php:21
 msgid "Last 10 Posts:"
 msgstr "Letzte 10 Beiträge:"
-
-# @ shop-front
-#: page-templates/archives.php:39
-#, php-format
-msgid "Permalink to %s"
-msgstr "Permalink zu %s"
 
 # @ shop-front
 #: page-templates/archives.php:48
@@ -818,6 +868,61 @@ msgstr ""
 "Entschuldigung, aber du hast nach etwas gesucht, das hier nicht zu finden "
 "ist."
 
+#: page-templates/contact.php:32
+msgid "Thanks for getting in touch!"
+msgstr "Danke für die Kontaktaufnahme!"
+
+# @ shop-front
+#: page-templates/contact.php:37
+msgid "Please enter your name."
+msgstr "Bitte den Namen eingeben."
+
+# @ shop-front
+#: page-templates/contact.php:38
+msgid "Please enter your email address."
+msgstr "Bitte die E-Mail-Adresse eingeben."
+
+#: page-templates/contact.php:39
+msgid "You entered an invalid email address."
+msgstr "Du hast eine ungültige E-Mail-Adresse eingegeben."
+
+# @ shop-front
+#: page-templates/contact.php:40
+msgid "Please enter a message."
+msgstr "Bitte eine Nachricht eingeben."
+
+#: page-templates/contact.php:111
+msgid "Oops, there seems to be a problem."
+msgstr "Hoppla, es scheint ein Problem zu geben."
+
+# @ shop-front
+#: page-templates/contact.php:121
+msgid "Please enter your name"
+msgstr "Bitte den Namen eingeben."
+
+# @ shop-front
+#: page-templates/contact.php:132
+msgid "Please enter a valid email address"
+msgstr "Bitte eine gültige E-Mail-Adresse eingeben."
+
+# @ shop-front
+#: page-templates/contact.php:132
+msgid "Please enter your email address"
+msgstr "Bitte die E-Mail-Adresse eingeben."
+
+#: page-templates/contact.php:143
+msgid "Message"
+msgstr "Nachricht"
+
+# @ shop-front
+#: page-templates/contact.php:145
+msgid "Please enter a message"
+msgstr "Bitte eine Nachricht eingeben."
+
+#: page-templates/contact.php:155
+msgid "Send"
+msgstr "Absenden"
+
 # @ shop-front
 #: search.php:29
 msgid ""
@@ -828,16 +933,23 @@ msgstr ""
 "versuche es noch einmal mit anderen Suchbegriffen."
 
 # @ shop-front
-#: searchform.php:10 searchform.php:14
+#: search.php:41
+msgid ""
+"<i class=\"icon icon-arrow-left\"></i><span class=\"text\">Previous Page</"
+"span>"
+msgstr ""
+"<i class=\"icon icon-arrow-left\"></i> <span class=\"text\">Vorherige Seite</"
+"span>"
+
+# @ shop-front
+#: search.php:42
+msgid ""
+"<i class=\"icon icon-arrow-right\"></i><span class=\"text\">Next Page</span>"
+msgstr ""
+"<i class=\"icon icon-arrow-right\"></i><span class=\"text\">Nächste Seite</"
+"span>"
+
+# @ shop-front
+#: searchform.php:10
 msgid "Search"
 msgstr "Suche"
-
-# @ shop-front
-#: includes/edd-functions.php:285
-msgid "Remove Discount"
-msgstr "Gutschein/Rabattcode entfernen"
-
-# @ shop-front
-#: includes/edd-functions.php:285
-msgid "remove"
-msgstr "entfernen"
